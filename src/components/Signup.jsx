@@ -21,10 +21,8 @@ const Signup = () => {
       if (result.success) {
         navigate("/dashboard");
       }
-    } catch (error) {
-      if (err) {
-        setError("an error occurred");
-      }
+    } catch (err) {
+      setError("an error occurred");
     } finally {
       setLoading(false);
     }
